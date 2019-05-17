@@ -8,7 +8,7 @@ public class finder {
 	static String whatYouAreLookingFor = "2222.c";
 	static int iterations = 0;
 	static String path = "/volumes/info/file.txt";
-	static String commandList = "/Users/jaime/desktop/bruh/practice/commando.txt";
+	static String commandList = "/Users/asdf/desktop/bruh/practice/commando.txt";
 	static String modifiedPath = "/";
 	static String destination = "/volumes/info";
 	//String in = "";
@@ -67,13 +67,14 @@ public class finder {
 					outputStreamCommandFile.println("cp "+modifiedPath+onlyFileName+" "+destination);
 					outputStreamCommandFile.flush();
 					shell.RunCommand("pwd");
-					shell.RunCommand("cat "+"/Users/jaime/desktop/bruh/practice/commando.txt > "+" "+"/Users/jaime/desktop/bruh/practice/commando.sh");
+					shell.RunCommand("cat "+"/Users/asdf/desktop/bruh/practice/commando.txt > "
+							    + " "+"/Users/asdf/desktop/bruh/practice/commando.sh");
 					shell.RunCommand("./commando.sh");
 					System.out.println("/////k//////////Ran copy command//////////////////////");
 				}//run command that copies and paste
 			}
 			else{//assumes its a directory
-				//System.out.println("Found a dirctory "+"\n"+shell.RunCommand("cd "+modifiedPath+onlyFileName).size()+ modifiedPath+onlyFileName);
+		//System.out.println("Found a dirctory "+"\n"+shell.RunCommand("cd "+modifiedPath+onlyFileName).size()+ modifiedPath+onlyFileName);
 				System.out.println("Found a directory");
 				String md2 = modifiedPath;
 				modifiedPath += onlyFileName;//change directory
